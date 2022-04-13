@@ -1,3 +1,16 @@
 <?php
+echo "TESTE INFOSERV<BR>";
 
-echo "Olá mundo.";
+$numero = 12;
+$resto = 6;
+
+$resto = $numero % 6; 
+if ($resto ==0) {
+    echo "o numero {$numero} e par.";
+} else {
+    echo "o numero " . $numero . "e impar.";
+}
+
+
+
+
