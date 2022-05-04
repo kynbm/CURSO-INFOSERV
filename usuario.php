@@ -50,3 +50,32 @@ $ i = 0 ;
 ///}
 
 echo  "Data hora inicial: " . data ( "d/m/a H:i:s" );
+
+$numeros = [4, 2, 5, 1, 10, 100, 50, 3, 9, 12];
+$pares = [];
+$impares = [];
+$contpares = 0;
+$contimpares = 0;
+
+$tamanhoArray = count($numeros);
+
+for ($i=0; $i < $tamanhoArray; $i++) 
+{ 
+    
+    $resto =  $numeros[$i] % 2;
+
+    if ($resto == 0 ) { // é par
+        $pares[$i] = $numeros[$i];
+        // $pares[4, 2, ...]
+        $contpares++;
+    
+    } else {
+        $impares[$i] = $numeros[$i];
+        $contimpares++;
+    }
+
+}
+
+echo "<br>count: " . count($pares)."<br>";
+print_r($pares);
+echo "<br>pares : {$contpares}";
